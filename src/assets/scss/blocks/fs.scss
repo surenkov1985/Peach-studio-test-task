@@ -1,0 +1,47 @@
+.fs {
+
+    & .content {
+        padding-top: 9.875rem;
+        padding-bottom: 9.875rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 60px;
+        background: url(../images/bg.png),
+            lightgray;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (max-width:1200px) {
+            padding-top: 7.875rem;
+            padding-bottom: 7.875rem;
+            gap: 50px;
+        }
+
+        @media (max-width:991px) {
+            padding-top: 6.5rem;
+            padding-bottom: 6.75rem;
+            gap: 40px;
+        }
+
+        @media (max-width:768px) {
+            padding-top: 4.5rem;
+            padding-bottom: 5.75rem;
+            gap: 25px;
+        }
+
+        @media (max-width:550px) {
+            padding-top: 2.5rem;
+            padding-bottom: 4.75rem;
+            gap: 18px;
+
+            & .btn {
+                margin-bottom: 18px;
+            }
+        }
+    }
+
+    & .h1 {
+        max-width: 710px;
+    }
+}

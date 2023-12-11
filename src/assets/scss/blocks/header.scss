@@ -1,0 +1,35 @@
+.head {
+
+    & .content {
+        padding-top: 29px;
+        padding-bottom: 29px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: clamp(1rem, 0.75rem + 0.55vw, 2rem);
+
+        @media screen and (max-width: 991px) {
+            padding: 25px 45px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 20px 20px;
+        }
+
+        @media screen and (max-width: 550px) {
+            padding: 15px 4px;
+        }
+    }
+
+    &__nav {
+        &_list {
+            display: flex;
+            align-items: center;
+            gap: 10px 20px;
+            flex-wrap: wrap;
+
+            @media screen and (max-width: 550px) {
+                gap: 4px 10px;
+            }
+        }
+    }
+}
