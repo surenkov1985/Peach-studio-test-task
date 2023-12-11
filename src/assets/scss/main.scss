@@ -1,0 +1,99 @@
+@import "./utils/reset.scss";
+@import "./utils/variables.scss";
+@import "./utils/general.scss";
+
+@import "../../../node_modules/swiper/swiper-bundle.css";
+@import "../../../node_modules/swiper/swiper.scss";
+
+
+
+@import "./mixins/grid-mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-width: 290px;
+    height: 100%;
+    min-height: 100vh;
+    background: $BgColor;
+    overflow-x: hidden;
+    color: $MainTextColor;
+    font-family: $MainFont;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: $Container;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1200px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 768px) {
+        // min-height: 769px;
+        padding: 0 33px;
+    }
+
+    @media (max-width: 400px) {
+        padding: 0 20px;
+    }
+
+    &-title {
+        // font-family: $ContentFont;
+        font-weight: 500;
+        font-size: 60px;
+        line-height: 100%;
+        text-align: center;
+        color: #FBDAA8;
+
+        @media (max-width: 1250px) {
+            font-size: 56px;
+        }
+
+        @media (max-width: 991px) {
+            font-size: 46px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+
+        @media (max-width: 550px) {
+            font-size: 32px;
+        }
+
+        @media (max-width: 400px) {
+            font-size: 28px;
+        }
+    }
+}
