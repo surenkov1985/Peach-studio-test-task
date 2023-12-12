@@ -1,0 +1,38 @@
+.mission {
+
+    & .container {
+        background-color: $MainRedColor;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+
+        &::before {
+            content: url(../images/Left\ pattern.png);
+            position: absolute;
+            left: 0;
+        }
+
+        &::after {
+            content: url(../images/Right\ pattern.png);
+            position: absolute;
+            right: 0;
+        }
+    }
+
+    & .content {
+        text-align: center;
+        padding-top: 140px;
+        padding-bottom: 140px;
+        display: flex;
+        flex-direction: column;
+
+        & h2 {
+            margin-bottom: 40px;
+        }
+
+        & p {
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+}

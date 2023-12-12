@@ -3,7 +3,7 @@ h1,
     font-size: 3.5rem;
     font-weight: $BoldFont;
     line-height: 1;
-    letter-spacing: -0.7px;
+    // letter-spacing: -0.7px;
 
     @media (max-width:1200px) {
         font-size: 3rem;
@@ -110,4 +110,8 @@ h1,
 .text-content p mark {
     background: none;
     color: $AccentColor;
+}
+
+.white-text {
+    color: #fff;
 }

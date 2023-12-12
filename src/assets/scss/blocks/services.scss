@@ -1,0 +1,20 @@
+.services {
+
+    &__content {
+
+        & h2 {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        &_list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        &_item {
+            width: calc(50% - 10px);
+        }
+    }
+}

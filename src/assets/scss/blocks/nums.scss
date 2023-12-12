@@ -1,0 +1,36 @@
+.nums {
+
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 80px 185px;
+    }
+
+    &__item {
+        // width: 30%;
+
+        &_value {
+            color: $MainRedColor;
+            font-size: 80px;
+            font-weight: 600;
+            line-height: 0.8;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 7px;
+
+            & .mark {
+                font-size: 64px;
+            }
+        }
+
+        &_text {
+            color: #444;
+            font-size: 18px;
+            line-height: 1.2;
+        }
+    }
+}

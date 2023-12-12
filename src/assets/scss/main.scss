@@ -8,6 +8,11 @@
 @import "./blocks/header.scss";
 @import "./blocks/fs.scss";
 @import "./blocks/about.scss";
+@import "./blocks/nums.scss";
+@import "./blocks/map.scss";
+@import "./blocks/mission.scss";
+@import "./blocks/services.scss";
+
 
 @import "./mixins/grid-mixin.scss";
 
@@ -59,7 +64,7 @@ body {
     height: 100%;
     padding: $ContentPD;
     display: flex;
-    align-items: center;
+    // align-items: center;
 
     @media (max-width: 1200px) {
         padding: 0 50px;
